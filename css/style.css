@@ -1,0 +1,186 @@
+/*
+----
+*/
+
+* {
+     box-sizing: border-box;
+}
+
+
+
+/* Header
+===============================================================================
+*/
+
+.name{
+     font-size: 1.25em;
+     padding-bottom: 2%;
+     text-decoration: underline;
+}
+
+.name,
+.main-nav li{
+     text-align: center;
+     background: #61889f;
+     margin-top: 6px;
+     margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a{
+     /*display: inline-block;*/
+     padding: 10px 15px;
+     display:block;
+}
+
+.main-nav a{
+
+}
+
+/* Body - Main page
+================================================================================
+*/
+.container{
+     padding-left: 1em;
+     padding-right: 1em;
+}
+
+body{
+     font-family: 'Raleway', sans-serif;
+     line-height: 1.6;
+     background: #fcfcfc;
+     padding: 0;
+}
+
+a{
+     color: #ffffff;
+     text-decoration: none;
+}
+
+a:hover{
+     color: red;
+}
+
+.main-header
+{
+     padding: 1em 0;
+     background: #61889f;
+     color: white;
+}
+
+.name{
+     margin: 0;
+}
+
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container h2{
+     color: #61889f;
+     text-align: center;
+     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+#icons{
+     display: none;
+}
+
+/* Body - Meteor Extra styling
+================================================================================
+*/
+
+h1 {
+     color: #61889f;
+}
+
+dd > a {
+     color: red;
+}
+
+dd {
+     color: #61889f;
+}
+
+
+/* footer
+================================================================================
+*/
+
+.main-footer
+{
+     background: #d9e4ea;
+     padding: 2em 0;
+     text-align: center;
+}
+
+
+/* Mobile issues    121
+===============================================================================
+*/
+
+/* Setting for anything OVER min-width */
+@media(min-width: 769px){
+
+     .container{
+          width: 70%;
+          margin: auto;
+          max-width: 1000px;
+     }
+
+     .container h2{
+          text-align: left;
+     }
+
+     .wrapper{
+          min-height: calc(100vh - 121px);
+     }
+
+     .name,
+     .main-nav,
+     .main-nav li{
+          display: inline-block;
+     }
+
+     .name{
+          width: 240px;
+          margin-right: 60px;
+          text-decoration: none;
+     }
+
+/* Setting double columns*/
+     .col{
+          width: 50%;
+          display: inline-block;
+          /*background: rgba(217,228,234, .5);*/
+          margin-right: -4px;
+          vertical-align: top;
+          padding: 15px;
+     }
+
+     #icons{
+          display: table;
+          margin: auto;
+
+          padding-top: 1%;
+          padding-bottom: 1%;
+          background: #C9F2FF;
+     }
+
+     #icons a{
+          display: table-cell;
+          text-align: center;
+          width: 20%;
+     }
+
+     #icons img{
+          width: 20%;
+          max-width: 20%;
+     }
+
+
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <% include partials/page/head.ejs %>
+</head>
+
+<header> </header>
+
+<body>
+     <div class="container">
+          <h1> <%= title %> </h1>
+          <h2> Current weather statistics </h2>
+          <ul>
+               <% for(var i = 0; i < stats.length; i++){%>
+                    <li> <%= stats[i] %>
+               <%} %>
+          </ul>
+
+
+<% include partials/page/footer.ejs %>
+
+     </div> <!--end of container -->
+
+<!--scripts-->
+</body>
+</html>
